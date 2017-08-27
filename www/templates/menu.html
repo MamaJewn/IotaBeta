@@ -1,27 +1,38 @@
-<ion-side-menus>
-
-  <ion-pane ion-side-menu-content>
-    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
     </ion-nav-bar>
-    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
-  </ion-pane>
-
-  <ion-side-menu side="left">
-    <header class="bar bar-header bar-stable">
-      <h1 class="title">Left</h1>
-    </header>
-    <ion-content class="has-header">
-      <ion-list>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21">
+    <ion-content padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+      <div class="spacer" style="width: 268px; height: 43px;"></div>
+      <div class="profile-image">
+        <a style="display:block;" ui-sref="menu.welcome()" menu-close="">
+          <img src="img/yZ2In7XSQiAaH7XzZfOt_IotaBetalogo3.png" style="display: block; width: 70%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+      <h1 id="menu-heading1" style="color:#FFFFFF;text-align:center;">Iota Beta</h1>
+      <div id="menu-markdown34" class="show-list-numbers-and-dots">
+        <hr>
+      </div>
+      <ion-list id="menu-list1">
+        <ion-item class="item-icon-left side-menu-item" id="menu-list-item8" ui-sref="menu.welcome()" menu-close="">
+          <i class="icon ion-ios-home-outline"></i>Welcome</ion-item>
+        <ion-item class="item-icon-left side-menu-item" id="menu-list-item1" ui-sref="menu.physics()" menu-close="">
+          <i class="icon ion-ios-flask-outline"></i>HL/SL Physics</ion-item>
+        <ion-item class="item-icon-left side-menu-item" id="menu-list-item2" ui-sref="menu.sLMathmatics()" menu-close="">
+          <i class="icon ion-ios-calculator-outline"></i>SL Mathmatics</ion-item>
+        <ion-item class="item-icon-left side-menu-item" id="menu-list-item101" ui-sref="menu.hLMathmatics()" menu-close="">
+          <i class="icon ion-stats-bars"></i>HL Mathmatics</ion-item>
+        <ion-item class="item-icon-left side-menu-item" id="menu-list-item9" ui-sref="menu.settings()" menu-close="">
+          <i class="icon ion-ios-gear-outline"></i>Settings</ion-item>
+        <ion-item class="item-icon-left side-menu-item" id="menu-list-item113" ui-sref="menu.memes()" menu-close="">
+          <i class="icon ion-social-github-outline"></i>Meme of the Day</ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
